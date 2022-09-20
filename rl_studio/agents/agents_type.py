@@ -6,5 +6,5 @@ class AgentsType(Enum):
     TURTLEBOT = "turtlebot"
     ROBOT_MESH = "robot_mesh"
     MOUNTAIN_CAR = "mountain_car"
-    MANUAL_ROBOT = "manual_robot"
     CARTPOLE = "cartpole"
+    AUTOPARKING = "autoparking"

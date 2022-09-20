@@ -17,8 +17,8 @@ register(
 
 register(
     id="myCartpole-v0",
-    entry_point="rl_studio.envs.openai_gym.cartpole.cartpole_env:CartPoleEnv",
-    max_episode_steps=10000,
+    entry_point="gym.envs.classic_control:CartPoleEnv",
+    max_episode_steps=500,
 )
 
 
@@ -27,4 +27,10 @@ register(
     id="MyMountainCarEnv-v0",
     entry_point="rl_studio.envs.gazebo.mountain_car:MountainCarEnv",
     # More arguments here
+)
+
+# AutoParking envs
+register(
+    id="AutoparkingEnv-v0",
+    entry_point="rl_studio.envs.gazebo.autoparking.models:AutoparkingEnv",
 )
